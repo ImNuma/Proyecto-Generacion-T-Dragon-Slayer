@@ -3,6 +3,8 @@ Este es mi proyecto para el bootcamp de Generacion T. Se trata de un juego llama
 
 Este juego es uno en el que TÚ decides tu propia historia, eligiendo diferentes opciones, que te podrán llevar hasta la riqueza y la gloria, o hasta tu muerte.
 
+Link del Trello: https://trello.com/b/c8JLLC0C/dragon-slayer-proyecto-generaci%C3%B3nt
+
 Hecho por Matías Lofeudo
 
 © Todos los derechos reservados
