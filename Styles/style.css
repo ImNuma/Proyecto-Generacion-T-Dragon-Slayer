@@ -304,6 +304,12 @@ h3 a {
   text-shadow: 5px 5px 6px red;
 }
 
+.pocionCurativa {
+  color: rgb(241, 133, 133);
+  text-shadow: 3px 3px 6px rgb(206, 105, 105);
+  text-shadow: 5px 5px 6px rgb(206, 105, 105);
+}
+
 footer {
   background-color: #000000;
   text-align: center;
