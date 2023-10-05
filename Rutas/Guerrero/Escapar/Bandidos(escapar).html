@@ -15,11 +15,15 @@
     </style>
 </head>
 <body>
-    <h6 style="text-align: center;">
-        <a href="../../../index.html">
-            INICIO
-        </a>
-    </h6>
+    <details style="position: fixed;">
+        <summary></summary>
+        <nav class="menu">
+          <a href="../../../index.html">Inicio</a>
+          <a href="">Skills</a>
+          <a href="https://github.com/ImNuma" target="_blank">Github</a>
+          <a><span style="color: gold;">Oro: 10</span> </a>
+        </nav>
+      </details>
     <h2>
         <p style="text-indent: 20px;">
             El <span class="claseGuerrero">Guerrero</span>, sabiendo que no podía enfrentarse a ellos en su estado actual, decidió huir.
@@ -33,18 +37,14 @@
             ¿Que decides hacer?
         </p>
     </div>
-    <h3>
-        <div style="text-align: center;">
-            <a href="./Usar pocion(guerrero).html">
-                Usar poción curativa
-            </a>
-        </div>
-    </h3>
-    <h3>
-        <div style="text-align: center;">
-            <a href="./No usar pocion(guerrero).html">
-                No usar poción curativa
-            </a>
-        </div>
-    </h3>
+    <div class="btnCenter">
+        <button class="button type1 anim miBoton">
+            <a href="./Usar pocion(guerrero).html" class="linkDecoration btn-txt miEnlace">Usar Poción Curativa</a>
+        </button>
+    </div>
+    <div class="btnCenter">
+        <button class="button type1 anim miBoton">
+            <a href="./No usar pocion(guerrero).html" class="linkDecoration btn-txt miEnlace">No Usar Poción Curativa</a>
+        </button>
+    </div>
 </body>
