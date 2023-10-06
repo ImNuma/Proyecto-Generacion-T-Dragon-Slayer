@@ -324,6 +324,12 @@ h3 a {
   text-shadow: 5px 5px 6px rgb(222, 100, 100);
 }
 
+.elixir {
+  color: goldenrod;
+  text-shadow: 3px 3px 6px gold;
+  text-shadow: 5px 5px 6px gold;
+}
+
 .linkDecoration {
   text-decoration: none;
 }
