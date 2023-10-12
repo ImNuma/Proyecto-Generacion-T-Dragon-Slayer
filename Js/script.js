@@ -1,0 +1,57 @@
+const habilidadesButton = document.querySelector('.habilidades-button');
+const habilidadesMenu = document.querySelector('.habilidades');
+const descripcionHabilidad = document.querySelector('.descripcion-habilidad');
+const habilidades = document.querySelectorAll('.habilidades ul li');
+
+habilidadesButton.addEventListener('click', function () {
+    if (habilidadesMenu.style.display === 'block') {
+        habilidadesMenu.style.display = 'none';
+        descripcionHabilidad.style.display = 'none';
+    } else {
+        habilidadesMenu.style.display = 'block';
+    }
+});
+
+habilidades.forEach(function (habilidad) {
+    habilidad.addEventListener('click', function () {
+        const descripcion = obtenerDescripcionHabilidad(habilidad.getAttribute('data-habilidad'));
+        descripcionHabilidad.innerHTML = `<p>${descripcion}</p>`;
+        descripcionHabilidad.style.display = 'block';
+        habilidadesMenu.style.display = 'none'; // Cierra el menú al hacer clic en una habilidad
+    });
+});
+
+function obtenerDescripcionHabilidad(nombreHabilidad) {
+    const descripciones = {
+        //GUERRERO
+        'Defensa Absoluta': '<span style="color: gold;">Otorga al usuario una inmunidad total contra los ataques enemigos.</span> Esta habilidad le permite al usuario adoptar una postura defensiva inquebrantable que lo vuelve prácticamente invulnerable a cualquier tipo de daño. Al activar esta habilidad, el usuario puede resistir cualquier ataque, desde golpes físicos hasta ataques mágicos, <span style="color: chartreuse;"> y los desvía con facilidad</span>, sin importar la fuerza del oponente. <span style="color: darkslateblue;">La unica debilidad de esta habilidad es que solo eres inmune a un ataque.</span> <span style="color: crimson;"> Esta habilidad no puede ser usada con frecuencia.</span>',
+        'Golpe Feroz': 'El guerrero <span style="color: gold;">concentra toda su fuerza en un poderoso golpe</span>, capaz de infligir daño significativo a su objetivo. <span style="color: darkslateblue;"> Esta habilidad requiere un tiempo de carga de 5 segundos</span>, pero su potencia es capaz de hacer tambalear incluso a los enemigos más fuertes. <span style="color: crimson;">Mientras cargas la habilidad quedas indefenso y vulnerable a los ataques enemigos.</span>',
+        'Parry': 'Esta habilidad no solo lo protege de los ataques físicos entrantes, sino que también le <span style="color: aqua;">brinda la oportunidad de convertir la defensa en un feroz ataque,</span> lo que lo convierte en un guerrero temible y letal. <br> <span style="color: gold;">No importa cuán poderoso sea el ataque físico,</span> el Guerrero puede <span style="color: violet;">desviarlos con facilidad</span> y sin esfuerzo aparente. Su destreza en el desvío es tan precisa que <span style="color:blue;">los ataques desviados no causan ningún daño</span> al Guerrero. <br> Tras desviar un ataque, el Guerrero aprovecha la oportunidad para lanzar un <span style="color: crimson;">contraataque letal.</span> Sus enemigos quedan <span style="color: darkseagreen;">momentáneamente aturdidos</span> por la sorpresa y la incredulidad de que sus ataques hayan sido desviados.',
+        'Intencion de la Espada': 'La "Intención de la Espada" es la manifestación suprema de la habilidad de un espadachín. Se trata de una <span style="color: gold; text-shadow: 0px 2px 5px gold;">técnica legendaria</span> que permite al usuario liberar un <span style="color: rgb(129, 129, 235);">tajo de energía increíblemente afilado,</span> capaz de cortar incluso los materiales más resistentes, como el mithril. Sin embargo, esta técnica <span style="color: rgb(106, 228, 106);">no se trata solo de fuerza bruta, sino de la perfecta sintonía entre el espadachín y su espada.</span> <br> Cuando un espadachín logra comprender el camino de la espada en su forma más pura, se convierte en un <span style="color: blueviolet; text-shadow: 0px 2px 10px violet;">Maestro de la Espada.</span> Solo unos pocos a lo largo de la historia han alcanzado este nivel de destreza y maestría. La "Intención de la Espada" representa la culminación de años de entrenamiento, disciplina y conexión con la propia arma. <br> El proceso de desencadenar esta técnica es un acto de <span style="color: rgb(56, 205, 212);">profunda concentración y enfoque.</span> El espadachín debe conectarse espiritualmente con su espada, sintiendo cada detalle de su filo, su peso y su equilibrio. Cuando el momento es propicio y la conexión es perfecta, el espadachín puede liberar una <span style="color: red;">onda de energía en forma de corte, que se desplaza a una velocidad asombrosa y puede atravesar cualquier obstáculo en su camino.</span> <br> Sin embargo, el uso de la "Intención de la Espada" <span style="color: black; text-shadow: 0px 0px 10px crimson; text-shadow: -1px 2px 10px crimson;">no es gratuito.</span> Tiene un <span style="color: cadetblue;">impacto significativo en la fuerza mental del espadachín,</span> <span style="color: rgb(55, 14, 89); text-shadow: 0px 0px 10px white;">dejándolo agotado y vulnerable después de su uso.</span> Debido a esta carga mental, <span style="color: rgb(220, 130, 20);">solo puede ser utilizado una vez cada 24 horas,</span> lo que significa que debe ser reservado para <span style="color: black; text-shadow: 0px 0px 10px crimson; text-shadow: -1px 2px 10px crimson;">momentos verdaderamente críticos.</span>',
+        'Corte Heptagonal': 'El Corte Heptagonal es una <span style="color: gold;">manifestación de pura destreza y maestría en el arte de la espada.</span> Este ataque, <span class="intencionEspada">imbuido con la Intención de la Espada,</span> <span style="color: crimson;">canaliza el poder de siete cortes simultáneos en un solo tajo de energía letal.</span> La espada del usuario irradia con un resplandor brillante y cortante mientras se desencadena esta habilidad. <br> Cuando el Corte Heptagonal se libera, atraviesa el aire con una velocidad vertiginosa y precisión mortal. <span style="color: skyblue;">Cualquier objeto o enemigo en su camino es dividido y desgarrado sin piedad. Es capaz de cortar incluso a través de la magia y las defensas más formidables.</span> <br> Sin embargo, este ataque excepcionalmente poderoso <span style="color: black; text-shadow: 0px 0px 10px crimson; text-shadow: -1px 2px 10px crimson;">tiene una debilidad fundamental.</span> La carga mental y física de canalizar semejante poder es abrumadora. <span style="color: royalblue;">Después de ejecutar el Corte Heptagonal, el usuario queda exhausto, su cuerpo y mente agotados por el esfuerzo sobrehumano.</span>  <span style="color: black; text-shadow: 0px 0px 10px crimson; text-shadow: -1px 2px 10px crimson;">Esto lo deja vulnerable y sin capacidad de luchar,</span> convirtiendo esta habilidad en un último recurso desesperado, <span style="color: darkmagenta;">reservado para situaciones de vida o muerte.</span>',
+        //MAGO
+        //fuego
+        'Bola de Fuego': 'Esta es la habilidad elemental más <span style="color: cornflowerblue;">básica</span>  del fuego. El mago genera una pequeña esfera de fuego en la palma de su mano y la lanza hacia el objetivo. <span style="color: orangered;">La bola de fuego es de tamaño modesto, su explosion es pequeña y tiene un alcance limitado,</span> pero puede <span style="color: darkviolet;">causar quemaduras menores</span> en el impacto.',
+        'Flecha de Fuego': 'Es una habilidad de magia <span class="fuego">elemental de fuego</span> que permite crear y lanzar <span style="color: crimson;">proyectiles ardientes de fuego comprimido.</span> Esta habilidad se caracteriza por su <span style="color: blue;">impresionante poder de penetración y la asombrosa velocidad con la que viajan los proyectiles.</span> Cuando se canaliza el mana en esta habilidad, se forma una flecha de fuego en la palma de la mano que, una vez liberada, atraviesa el aire con una velocidad vertiginosa y un <span style="color: lightgreen;">alcance considerable.</span> <br> La principal ventaja de la Flecha de Fuego radica en su capacidad para penetrar las defensas de los oponentes, ya que <span style="color: violet;">puede atravesar armaduras y barreras con relativa facilidad.</span> Esto la convierte en un recurso eficaz para enfrentar a enemigos fuertemente protegidos. Sin embargo, su gran velocidad puede ser una <span style="color: black; text-shadow: 0px 0px 10px crimson; text-shadow: -1px 2px 10px crimson;">desventaja</span> cuando se trata de precisión a largas distancias, ya que <span style="color: black; text-shadow: 0px 0px 10px crimson; text-shadow: -1px 2px 10px crimson;">es difícil de acertar al objetivo a grandes rangos, lo que requiere una destreza y precisión excepcionales por parte de quien la usa.</span> <span style="color: cyan;">En combate cercano,</span> la Flecha de Fuego es una arma formidable, capaz de infligir daño significativo y superar las defensas de los oponentes.',
+        //agua
+        'Proyectil de Agua': 'Esta es una habilidad elemental <span style="color: cadetblue;">básica</span> del agua. El mago crea un <span style="color: aqua;">proyectil de agua comprimida</span> y lo dispara hacia su objetivo. Aunque <span style="color: crimson;">no es particularmente poderoso,</span> el proyectil de agua puede <span style="color: greenyellow;">empapar al objetivo</span> y, en condiciones adecuadas, puede <span style="color: midnightblue;">apagar pequeños incendios.</span>',
+        //viento
+        'Tajo de Viento': 'Esta es una habilidad elemental <span style="color: cadetblue;">básica</span> de viento. El mago realiza un <span style="color: lightgreen;">rápido movimiento de su mano,</span> creando una <span style="color: darkred;">cuchilla de viento afilada</span> que se lanza hacia el enemigo. Aunque <span style="color: blueviolet;">no causa daño devastador,</span> puede <span style="color: gold;">cortar superficialmente y desequilibrar al objetivo.</span>',
+        //rayo
+        'Electrocutar': 'La habilidad elemental más <span style="color: cadetblue;">básica</span> del rayo. El mago emite una <span style="color: gold;">pequeña descarga eléctrica</span> desde sus dedos hacia el objetivo. Aunque es una habilidad de bajo nivel, puede <span style="color: brown;">causar molestias y calambres si alcanza su objetivo.</span>',
+        //tierra
+        'Proyectil de Roca': 'Esta es una habilidad elemental <span style="color: cadetblue;">básica</span> de tierra. El mago <span style="color: saddlebrown;">manipula la tierra cercana</span> para crear un proyectil de roca que lanza hacia el enemigo. Aunque <span style="color: darkorange;">no es particularmente grande ni poderoso,</span> puede <span style="color:lightseagreen;">golpear al objetivo con fuerza moderada.</span> <span style="color: black; text-shadow: 0px 0px 10px crimson; text-shadow: -1px 2px 10px crimson;">Su única debilidad es que es muy predecible, resultando en que sea facil de bloquear o evadir.</span>',
+    };
+
+    return descripciones[nombreHabilidad] || 'No se encontró descripción para esta habilidad.';
+}
+
+function abrirEnNuevaVentana() {
+    alert("Este enlace se abrirá en una nueva pestaña");
+}
+
+const menuButton = document.querySelector('.menu-button');
+
+menuButton.addEventListener('click', function() {
+  descripcionHabilidad.style.display = 'none';
+});

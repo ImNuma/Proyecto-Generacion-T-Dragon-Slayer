@@ -23,8 +23,8 @@
         <summary></summary>
         <nav class="menu">
           <a href="../../../index.html">Inicio</a>
-          <a href="../../Guerrero/Skills/Skills4(guerrero).html" target="_blank">Skills</a>
-          <a href="https://github.com/ImNuma" target="_blank">Github</a>
+          <a href="../../Guerrero/Skills/Skills4(guerrero).html" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Skills</a>
+          <a href="https://github.com/ImNuma" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Github</a>
           <a><span style="color: gold;">Oro: 5500</span> </a>
         </nav>
       </details>
@@ -58,13 +58,22 @@
             </p>
     </div>
 
-    <div class="btnCenter">
-        <button class="button type1 anim miBoton">
-            <a href="../Skills/Skills4(guerrero).html" class="linkDecoration btn-txt miEnlace" target="_blank">
-                Ver tus Skills
-            </a>
-        </button>
+    <div class="menuSkills">
+        <button class="menu-button habilidades-button">Ver tus Skills</button>
+        <div class="habilidades">
+            <ul>
+                <li data-habilidad="Defensa Absoluta">Defensa Absoluta</li>
+                <li data-habilidad="Golpe Feroz">Golpe Feroz</li>
+                <li data-habilidad="Parry">Parry</li>
+                <li data-habilidad="Intencion de la Espada">Intención de la Espada</li>
+                <li data-habilidad="Corte Heptagonal">Corte Heptagonal</li>
+            </ul>
+        </div>
+        <div class="descripcion-habilidad">
+            <p>Selecciona una habilidad para ver su descripción.</p>
+        </div>
     </div>
+
 
     <div class="btnCenter">
         <button class="button type1 anim miBoton">
@@ -73,5 +82,7 @@
             </a>
         </button>
     </div>
+
+    <script src="../../../Js/script.js"></script>
 </body>
 </html>

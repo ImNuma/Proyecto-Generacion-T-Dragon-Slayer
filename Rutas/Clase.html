@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige tu Clase</title>
+    <link rel="stylesheet" href="../Styles/clase.css">
     <link rel="icon" href="../Imagenes/favicon.png">
-    <link rel="stylesheet" href="../Styles/style.css">
-    <title>Selección de clase</title>
     <style>
         body {
-    background-image: url(../Imagenes/Seleccion\ de\ personaje.jpg);
+    background-image: url(../Imagenes/class.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -15,52 +17,47 @@
     </style>
 </head>
 <body>
-    
     <div class="btnCenter" style="margin-top: 50px;">
         <button class="button type1 anim miBoton">
             <a href="../index.html" class="linkDecoration btn-txt miEnlace">INICIO</a>
         </button>
     </div>
 
-    <h2>
-        <p style="font-size: 40px; line-height: 0%;;">
-            Elige tu clase:
-        </p>
+    <h2 class="elige">
+        Elige tu clase
     </h2>
-    <div class="contenedor">
-        <div class="imagen">
-            <h4 class="claseGuerrero">
-                Guerrero
-            </h4>
-          <a href="./Guerrero/El Camino de un Guerrero.html">
-            <img src="../Imagenes/guerrero.png" alt="Guerrero">
-          </a>
-          <h5>
-            <p style="font-size: 35px;">El guerrero es un personaje de caracter noble, especializado en el combate cuerpo a cuerpo. Posee habilidades en el uso de armas y armaduras pesadas, lo que lo hace ideal para enfrentar a enemigos poderosos</p>
-          </h5>
+    
+    <div class="columns">
+        <div class="column guerrero">
+            <h2 class="nombreClase claseGuerrero">
+                GUERRERO
+            </h2>
+            <img src="../Imagenes/warrior.png" alt="Imagen Guerrero" class="imagen">
+            <p class="descripcion">
+                El guerrero es un personaje de caracter noble, está especializado en el combate cuerpo a cuerpo. Posee habilidades en el uso de armas y armaduras pesadas, lo que lo hace ideal para enfrentar a enemigos poderosos.
+            </p>
+            <button class="shadow__btn">
+                <a href="./Guerrero/El Camino de un Guerrero.html">
+                    Seleccionar
+                </a>
+            </button>
         </div>
-        <div class="imagen">
-            <h4 class="claseMago">
-                Mago
-            </h4>
-            <a href="./Mago/El ascenso de un mago.html">
-                <img src="../Imagenes/mago.png" alt="Mago">
-            </a>
-          <h5>
-            <p style="font-size: 35px;">El mago es un personaje que posee vastos conocimientos. Esta especializado en el uso de la magia. Sus habilidades le permiten controlar elementos naturales, curar a sus aliados y atacar a sus enemigos con poderosos hechizos</p>
-          </h5>
+        
+        <div class="column mago">
+            <h2 class="nombreClase claseMago">
+                MAGO
+            </h2>
+            <img src="../Imagenes/wizard.png" alt="Imagen Mago">
+            <p class="descripcion">
+                El mago es un personaje que posee vastos conocimientos. Está especializado en el uso de la magia. Sus habilidades le permiten controlar elementos naturales, curar a sus aliados y atacar a sus enemigos con poderosos hechizos.
+            </p>
+            <button class="shadow__btn">
+                <a href="./Mago/El ascenso de un mago.html">
+                    Seleccionar
+                </a>
+            </button>
         </div>
-        <div class="imagen">
-            <h4 class="claseArquero">
-                Arquero
-            </h4>
-            <a href="./Arquero/La destreza de un Arquero.html">
-                <img src="../Imagenes/arquero.png" alt="Arquero">
-            </a>
-            <h5>
-                <p style="font-size: 35px;">El arquero es un personaje de caracter frio y calculador, especializado en el uso de arcos y flechas. Posee habilidades en el combate a distancia y puede causar grandes daños a los enemigos desde lejos</p>
-            </h5>
-          </div>
-      </div>
+    </div>
+
 </body>
 </html>

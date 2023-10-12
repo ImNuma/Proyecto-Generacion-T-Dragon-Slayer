@@ -22,8 +22,8 @@
         <summary></summary>
         <nav class="menu">
           <a href="../../../index.html">Inicio</a>
-          <a href="../../Guerrero/Skills/Skills3(guerrero).html" target="_blank">Skills</a>
-          <a href="https://github.com/ImNuma" target="_blank">Github</a>
+          <a href="../../Guerrero/Skills/Skills3(guerrero).html" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Skills</a>
+          <a href="https://github.com/ImNuma" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Github</a>
           <a><span style="color: gold;">Oro: 18</span> </a>
         </nav>
       </details>
@@ -45,10 +45,19 @@
             </p>
     </div>
 
-    <div class="btnCenter">
-        <button class="button type1 anim miBoton">
-            <a href="../Skills/Skills3(guerrero).html" class="linkDecoration btn-txt miEnlace" target="_blank">Ver tus skills</a>
-        </button>
+    <div class="menuSkills">
+        <button class="menu-button habilidades-button">Ver tus Skills</button>
+        <div class="habilidades">
+            <ul>
+                <li data-habilidad="Defensa Absoluta">Defensa Absoluta</li>
+                <li data-habilidad="Golpe Feroz">Golpe Feroz</li>
+                <li data-habilidad="Parry">Parry</li>
+                <li data-habilidad="Intencion de la Espada">Intención de la Espada</li>
+            </ul>
+        </div>
+        <div class="descripcion-habilidad">
+            <p>Selecciona una habilidad para ver su descripción.</p>
+        </div>
     </div>
 
     <h2>
@@ -80,5 +89,7 @@
             <a href="./Recompensa Dragon Antiguo.html" class="linkDecoration btn-txt miEnlace">Siguiente</a>
         </button>
     </div>
+
+    <script src="../../../Js/script.js"></script>
 </body>
 </html>

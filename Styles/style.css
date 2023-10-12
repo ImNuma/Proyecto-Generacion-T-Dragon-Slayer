@@ -188,6 +188,7 @@ h3 a {
     border-style: ridge;
     border-width: 20px;
     border-color:rgb(227, 128, 240);
+    user-select: none;
   }
   .Muerte {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -203,6 +204,7 @@ h3 a {
     border-style:groove;
     border-width: 20px;
     border-color:rgb(136, 19, 19);
+    user-select: none;
   }
   .NEW {
     font-family: 'MedievalSharp', cursive;
@@ -217,6 +219,7 @@ h3 a {
     border-width: 10px;
     border-color: gold;
     padding: 15px;
+    user-select: none;
   }
   .LOSS {
     font-family: 'MedievalSharp', cursive;
@@ -231,6 +234,7 @@ h3 a {
     border-width: 10px;
     border-color: rgb(156, 32, 32);
     padding: 15px;
+    user-select: none;
   }
   .SKILL {
     font-family: 'MedievalSharp', cursive;
@@ -246,6 +250,7 @@ h3 a {
     border-width: 20px;
     border-color: #E5E4E2;
     padding: 15px;
+    user-select: none;
   }
   .TUS-SKILL {
     font-family: 'MedievalSharp', cursive;
@@ -261,6 +266,7 @@ h3 a {
     border-width: 20px;
     border-color: #E5E4E2;
     padding: 15px;
+    user-select: none;
   }
   ul {
     list-style: none;
@@ -295,11 +301,7 @@ h3 a {
   text-shadow: 5px 5px 6px #e93dde;
 }
 
-.claseArquero {
-  color: rgb(115, 235, 79);
-  text-shadow: 3px 3px 6px #7aedad;
-  text-shadow: 5px 5px 6px #7aedad;
-}
+/* COLORES GUERRERO */
 
 .defAbsoluta {
   color: gold; 
@@ -324,6 +326,77 @@ h3 a {
   text-shadow: 3px 3px 6px violet;
   text-shadow: 5px 5px 6px violet;
 }
+
+/* COLORES GUERRERO END*/
+
+/* COLORES MAGO */
+
+.fuego {
+  color: rgb(253, 135, 0); 
+  text-shadow: 3px 3px 6px crimson;
+}
+
+.fuegoHabilidad {
+  color: rgb(253, 135, 0); 
+  text-shadow: 3px 3px 6px crimson;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.agua {
+  color: aquamarine; 
+  text-shadow: 3px 3px 6px cornflowerblue;
+}
+
+.aguaHabilidad {
+  color: aquamarine; 
+  text-shadow: 3px 3px 6px cornflowerblue;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.rayo {
+  color: gold; 
+  text-shadow: 3px 3px 6px goldenrod;
+}
+
+.rayoHabilidad {
+  color: gold; 
+  text-shadow: 3px 3px 6px goldenrod;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.tierra {
+  color: rgb(182, 122, 100); 
+  text-shadow: 3px 3px 6px rgb(96, 41, 18);
+}
+
+.tierraHabilidad {
+  color: rgb(182, 122, 100); 
+  text-shadow: 3px 3px 6px rgb(96, 41, 18);
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.viento {
+  color: lightgreen; 
+  text-shadow: 3px 3px 6px green;
+}
+
+.vientoHabilidad {
+  color: lightgreen; 
+  text-shadow: 3px 3px 6px green;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* COLORES MAGO */
 
 .pocionCurativa {
   color: rgb(241, 133, 133);
@@ -394,6 +467,7 @@ h3 a {
 
 .btnCenter {
   text-align: center;
+  user-select: none;
 }
 
 .button {
@@ -561,6 +635,7 @@ details[open] summary::after {
   justify-content: space-between;
   overflow: hidden;
   animation: closeMenu 300ms ease-in-out forwards;
+  user-select: none;
 }
 .menu a {
   padding: 12px 24px;
@@ -622,6 +697,7 @@ details[open]::before {
   text-align: center;
   margin-bottom: 50px;
   font-family: 'Ceviche One', cursive;
+  user-select: none;
 }
 
 .btnPop {
@@ -652,6 +728,7 @@ details[open]::before {
   visibility: hidden;
   opacity: 0;
   z-index: 1000;
+  user-select: none;
 }
 .overlay:target {
   visibility: visible;
@@ -716,6 +793,94 @@ details[open]::before {
 }
 
 /* Popup END */
+
+/* Menu misiones */
+
+.menuSkills {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh; /* Ajusta la altura del contenedor según tus necesidades */
+  margin-top: 20px;
+}
+
+.menu-button {
+  background-color: gray;
+  font-family: 'Yatra One'; 
+  color: #E5E4E2;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 5px ridge #E5E4E2;
+  font-size: 25px;
+  display: block;
+  transition-duration: 0.5s;
+  z-index: 9000;
+  user-select: none;
+}
+
+.menu-button:hover {
+  color: gold;
+  border-color: gold;
+  transform: scale(1.1);
+}
+
+.menu-button:active {
+  transform: scale(1);
+}
+
+.habilidades {
+  display: none;
+  background-color: gray;
+  border: 8px ridge #E5E4E2;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  z-index: 9000;
+  user-select: none;
+}
+
+.habilidades li:hover {
+  color: rgb(162, 0, 255);
+  transform: scale(1.1);
+}
+
+.habilidades li {
+  margin-top: 15px;
+  transition-duration: 0.4s;
+  color: white;
+  font-family: 'MedievalSharp';
+  font-size: 20px;
+}
+
+.habilidades ul {
+  margin-left: 0; /* Elimina el margen izquierdo de la lista */
+  padding: 0px 50px; /* Elimina cualquier relleno */
+}
+
+.descripcion-habilidad {
+  display: none;
+  background-color: gray;
+  border: 5px ridge #E5E4E2;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 200px;
+  font-family: 'Reggae One';
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 9000;
+  box-shadow: 0px 0px 30px #E5E4E2;
+  -webkit-text-stroke: 0.5px black;
+  user-select: none;
+}
+
+.habilidades-button {
+  margin-bottom: 20px;
+}
+
+/* Menu misiones End */
 
 footer {
   background-color: #000000;

@@ -1,28 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ascenso de un Mago</title>
     <link rel="icon" href="../../Imagenes/favicon.png">
     <link rel="stylesheet" href="../../Styles/style.css">
-    <title>El ascenso de un Mago</title>
     <style>
         body {
-            background-color: rgb(31, 30, 30);
-        }
+    background-image: url(../../Imagenes/Anvard\ city\ 2.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    background-repeat: repeat;
+    }
     </style>
 </head>
 <body>
-    <h1>
-        <p>
-            Lo siento, este camino todavia no es posible jugarlo debido a que el juego se encuentra en early access :p
+    
+    <details style="position: fixed;">
+        <summary></summary>
+        <nav class="menu">
+          <a href="../../index.html">Inicio</a>
+          <a href="./Skills/Skills1(Mago).html" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Skills</a>
+          <a href="https://github.com/ImNuma" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Github</a>
+          <a><span style="color: gold;">Oro: 0</span> </a>
+        </nav>
+      </details>
+
+    <h2>
+        <p style="text-indent: 20px;">
+            El <span class="claseMago">Mago</span> vivió sus primeros años en la penumbra de las calles de Anvard, una ciudad majestuosa pero también implacable. Huérfano desde una edad temprana, su vida estaba marcada por la lucha diaria por la supervivencia y el anhelo de conocimiento. Desde sus primeros recuerdos, sintió una atracción innata hacia el mundo de la magia y sus misterios.
         </p>
-        <p>
-            Puedes jugar con la clase <span class="claseGuerrero">GUERRERO</span> 
+        <p style="text-indent: 20px;">
+            Su vida cambió radicalmente cuando fue descubierto por miembros de la Corte Imperial de Magos de Anvard. En ese momento, el joven tenía una rara habilidad: podía canalizar y dominar no solo un elemento mágico, sino todos los elementos conocidos, desde el fuego hasta el agua, el viento, la tierra y el rayo. Esta habilidad excepcional era prácticamente desconocida en los humanos y lo convirtió en un recluta codiciado para la Corte Imperial.
         </p>
-    </h1>
-    <h3 style="text-align: center;">
-        <a href="../Clase.html">
-            VOLVER A SELECCIONAR TU CLASE
-        </a>
-    </h3>
+        <p style="text-indent: 20px;">
+            Bajo la tutela de los magos experimentados de la corte, el <span class="claseMago">Mago</span> comenzó su entrenamiento. A pesar de su falta de experiencia en combate, su sed de conocimiento y su capacidad para dominar múltiples elementos lo hicieron destacar rápidamente. Pasó años estudiando los intrincados secretos de la magia y perfeccionando su habilidad para manipular los elementos a su voluntad.
+        </p>
+        <p style="text-indent: 20px;">
+            A medida que sus habilidades mágicas crecían, también lo hacía su deseo de usar su poder para un propósito más grande. Fue entonces cuando se cruzó con la Resistencia de Dragon Slayer, un grupo de valientes guerreros que se enfrentaban a las amenazas de los dragones y otras criaturas mágicas. Intrigado por la causa de la Resistencia y ansioso por poner sus habilidades en práctica, el <span class="claseMago">Mago</span> se unió a sus filas.
+        </p>
+    </h2>
+
+    <div class="menuSkills">
+        <button class="menu-button habilidades-button">Ver tus Skills</button>
+        <div class="habilidades">
+            <ul>
+                <p class="fuegoHabilidad">FUEGO</p>
+                <li data-habilidad="Bola de Fuego">Bola de Fuego</li>
+                <p class="aguaHabilidad">AGUA</p>
+                <li data-habilidad="Proyectil de Agua">Proyectil de Agua</li>
+                <p class="vientoHabilidad">VIENTO</p>
+                <li data-habilidad="Tajo de Viento">Tajo de Viento</li>
+                <p class="rayoHabilidad">RAYO</p>
+                <li data-habilidad="Electrocutar">Electrocutar</li>
+                <p class="tierraHabilidad">TIERRA</p>
+                <li data-habilidad="Proyectil de Roca">Proyectil de Roca</li>
+            </ul>
+        </div>
+        <div class="descripcion-habilidad">
+            <p>Selecciona una habilidad para ver su descripción.</p>
+        </div>
+    </div>
+
+    <div class="btnCenter">
+        <button class="button type1 anim miBoton">
+            <a href="./Primera Mision del Mago.html" class="linkDecoration btn-txt miEnlace">Siguiente</a>
+        </button>
+    </div>
+    <div class="btnCenter">
+        <button class="button type1 anim miBoton">
+            <a href="../Clase.html" class="linkDecoration btn-txt miEnlace">Volver a Seleccionar tu clase</a>
+        </button>
+    </div>
+
+    <script src="../../Js/script.js"></script>
+
 </body>
 </html>
