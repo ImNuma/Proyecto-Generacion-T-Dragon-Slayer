@@ -416,6 +416,24 @@ h3 a {
   text-shadow: 5px 5px 6px rgb(209, 49, 49);
 }
 
+.pocionMana {
+  color: rgb(114, 182, 237);
+  text-shadow: 3px 3px 6px rgb(66, 80, 228);
+  text-shadow: 5px 5px 6px rgb(66, 80, 228);
+}
+
+.pocionManaMedia {
+  color: rgb(66, 158, 234);
+  text-shadow: 3px 3px 6px rgb(18, 36, 233);
+  text-shadow: 5px 5px 6px rgb(18, 36, 233);
+}
+
+.pocionManaAlta {
+  color: rgb(14, 128, 222);
+  text-shadow: 3px 3px 6px rgb(8, 23, 190);
+  text-shadow: 5px 5px 6px rgb(8, 23, 190);
+}
+
 .elixir {
   color: goldenrod;
   text-shadow: 3px 3px 6px gold;
