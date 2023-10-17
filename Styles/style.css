@@ -396,7 +396,48 @@ h3 a {
   font-weight: 600;
 }
 
-/* COLORES MAGO */
+.oscuridad {
+  color: black;
+  font-weight: 900;
+  text-shadow: 0px 0px 10px white;
+  -webkit-text-stroke: 0.1px white;
+}
+
+.oscuridadHabilidad {
+  color: black; 
+  text-shadow: 0px 0px 10px white;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.luz {
+  color: white;
+  text-shadow: 3px 3px 6px gold;
+}
+
+.luzHabilidad {
+  color: white; 
+  text-shadow: 3px 3px 6px gold;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.espacial {
+  color: rgb(178, 56, 239);
+  text-shadow: 0px 0px 10px white;
+}
+
+.espacialHabilidad {
+  color: rgb(178, 56, 239); 
+  text-shadow: 0px 0px 10px white;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* COLORES MAGO END */
 
 .pocionCurativa {
   color: rgb(241, 133, 133);
@@ -480,6 +521,21 @@ h3 a {
   box-shadow: 0px 0px 10px rgb(39, 98, 187);
 }
 
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #872694; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* SCROLLBAR END */
 
 /* Button */
 
@@ -505,6 +561,15 @@ h3 a {
   z-index: 0;
   white-space: nowrap;
   font-size: 3em;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 20px violet;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.9)
 }
 
 @media (max-width: 768px) {
@@ -554,8 +619,6 @@ h3 a {
 }
 
 .button:hover a{
-  -webkit-box-shadow: 1px 1px 200px #252525;
-          box-shadow: 1px 1px 200px #252525;
   color: rgb(144, 62, 192);
   border:none;
 }
@@ -830,7 +893,7 @@ details[open]::before {
   color: #E5E4E2;
   padding: 10px 20px;
   cursor: pointer;
-  border: 5px ridge #E5E4E2;
+  border: 8px ridge #E5E4E2;
   font-size: 25px;
   display: block;
   transition-duration: 0.5s;
@@ -842,6 +905,7 @@ details[open]::before {
   color: gold;
   border-color: gold;
   transform: scale(1.1);
+  box-shadow: 0px 0px 20px gold;
 }
 
 .menu-button:active {
@@ -880,7 +944,7 @@ details[open]::before {
 .descripcion-habilidad {
   display: none;
   background-color: gray;
-  border: 5px ridge #E5E4E2;
+  border: 8px ridge #E5E4E2;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 200px;

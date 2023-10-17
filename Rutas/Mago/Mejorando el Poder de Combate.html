@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejorando el Poder de Combate</title>
+    <link rel="icon" href="../../Imagenes/favicon.png">
+    <link rel="stylesheet" href="../../Styles/style.css">
+    <style>
+        body {
+    background-image: url(../../Imagenes/Anvard\ city\ 2.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    background-repeat: repeat;
+    }
+    </style>
+</head>
+<body>
+    
+    <details style="position: fixed;">
+        <summary></summary>
+        <nav class="menu">
+          <a href="../../index.html">Inicio</a>
+          <a href="./Skills/Skills4(Mago).html" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Skills</a>
+          <a href="https://github.com/ImNuma" target="_blank" title="Se abrirá en una nueva pestaña" onclick="abrirEnNuevaVentana();">Github</a>
+          <a><span style="color: gold;">Oro: 0</span></a>
+        </nav>
+      </details>
+
+    <h2>
+        <p style="text-indent: 20px;">
+            Después de recibir su recompensa por la misión cumplida, el <span class="claseMago">Mago</span> sabía que necesitaba mejorar sus habilidades y equipamiento para futuros desafíos. Decidió visitar una tienda de armas en busca de un bastón apropiado. Navegó entre varias opciones, algunas más costosas que otras, hasta que finalmente encontró uno que encajaba perfectamente con sus necesidades.
+        </p>
+        <p style="text-indent: 20px;">
+            Este bastón era impresionante: largo, hecho de madera blanca y adornado con una gema de mana incrustada en su extremo. El <span class="claseMago">Mago</span> sabía que este bastón potenciaría su magia, dándole un poder de ataque más letal. Por ejemplo, su <span class="fuego">Bola de Fuego,</span> que antes solo producía una pequeña explosión, se expandiría en una moderada explosión de fuego. Satisfecho con su elección, adquirió el bastón, invirtiendo su recompensa con la certeza de que lo ayudaría en su camino como Dragon Slayer.
+        </p>
+    </h2>
+
+    <div class="LOSS">
+        <p style="color: black; font-size: 50px; font-family: Impact; text-shadow: 4px 4px 10px rgb(255, 2, 2); text-align: center;">
+            <span style="-webkit-text-stroke: 1.5px rgb(255, 2, 2);">HAS PERDIDO</span>
+         </p>
+        <ul>
+            <li>
+                <span style="color: gold;">-25 de Oro</span> <span style="color: black;">[TOTAL= 25]</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="NEW">
+        <p style="color: black; font-size: 50px; font-family: Impact; text-shadow: 4px 4px 10px gold;">
+           <span style="-webkit-text-stroke: 1.5px gold;">HAS ADQUIRIDO</span>
+        </p>
+            <p>
+                <ul style="line-height: 50px; text-align: left;">
+                    <li>
+                        +1 Bastón Mágico <span style="color: rgb(100, 162, 233);">(Raro)
+                    </li>
+                </ul>
+            </p>
+    </div>
+
+    <h2>
+        <p style="text-indent: 20px;">
+            Sin embargo, no se detuvo allí. También visitó una tienda de libros de magia en busca de nuevos hechizos. Tras explorar una variedad de opciones, dos libros llamaron su atención. Uno de ellos era <span class="agua">Estacas de Hielo,</span> la magia que el Señor de la Ciudad había empleado en su enfrentamiento. El otro libro se llamaba <span class="tierra">Barrera de Tierra,</span> y su nombre sugería una función defensiva.
+        </p>
+        <p style="text-indent: 20px;">
+            El <span class="claseMago">Mago</span> decidió llevar ambos libros, sabiendo que le proporcionarían herramientas adicionales para su repertorio mágico. A pesar de agotar su presupuesto, consideró que esta inversión era esencial para fortalecer su poder de combate y prepararse para enfrentar los desafíos futuros. Como Dragon Slayer, necesitaba estar en constante crecimiento y adaptación para asegurar que la corrupción y el mal fueran derrotados. Con su nuevo bastón y conocimiento mágico, se sentía preparado para enfrentar lo que el destino le tenía reservado.
+        </p>
+    </h2>
+
+    <div class="LOSS">
+        <p style="color: black; font-size: 50px; font-family: Impact; text-shadow: 4px 4px 10px rgb(255, 2, 2); text-align: center;">
+            <span style="-webkit-text-stroke: 1.5px rgb(255, 2, 2);">HAS PERDIDO</span>
+         </p>
+        <ul>
+            <li><span style="color: gold;">-25 de Oro</span> <span style="color: black;">[TOTAL= 0]</span></li>
+        </ul>
+    </div>
+
+    <div class="SKILL">
+        <p style="color: black; font-size: 50px; font-family: Impact; text-shadow: 4px 4px 10px #E5E4E2;">
+           <span style="-webkit-text-stroke: 2px #E5E4E2;">HAS APRENDIDO</span>
+        </p>
+            <p>
+                <ul style="line-height: 50px; text-align: left;">
+                    <li>
+                        <span style="color: #E5E4E2; font-family: Impact; text-shadow: 4px 4px 10px #E5E4E2;">SKILL: </span>Estacas de Hielo
+                    </li>
+                    <li>
+                        <span style="color: #E5E4E2; font-family: Impact; text-shadow: 4px 4px 10px #E5E4E2;">SKILL: </span>Barrera de Tierra
+                    </li>
+                </ul>
+            </p>
+    </div>
+
+    <div class="menuSkills">
+        <button class="menu-button habilidades-button">Ver tus Skills</button>
+        <div class="habilidades">
+            <ul>
+                <p class="fuegoHabilidad">FUEGO</p>
+                <li data-habilidad="Bola de Fuego">Bola de Fuego</li>
+                <li data-habilidad="Flecha de Fuego">Flecha de Fuego</li>
+                <p class="aguaHabilidad">AGUA</p>
+                <li data-habilidad="Proyectil de Agua">Proyectil de Agua</li>
+                <li data-habilidad="Estacas de Hielo">Estacas de Hielo</li>
+                <p class="vientoHabilidad">VIENTO</p>
+                <li data-habilidad="Tajo de Viento">Tajo de Viento</li>
+                <li data-habilidad="Impulso">Impulso</li>
+                <p class="rayoHabilidad">RAYO</p>
+                <li data-habilidad="Electrocutar">Electrocutar</li>
+                <p class="tierraHabilidad">TIERRA</p>
+                <li data-habilidad="Proyectil de Roca">Proyectil de Roca</li>
+                <li data-habilidad="Barrera de Tierra">Barrera de Tierra</li>
+            </ul>
+        </div>
+        <div class="descripcion-habilidad">
+            <p>Selecciona una habilidad para ver su descripción.</p>
+        </div>
+    </div>
+
+    <div class="btnCenter">
+        <button class="button type1 anim miBoton">
+            <a href="./Mision Cazar al Wyvern.html" class="linkDecoration btn-txt miEnlace">
+                Siguiente
+            </a>
+        </button>
+    </div>
+
+    <script src="../../Js/script.js"></script>
+</body>
+</html>
